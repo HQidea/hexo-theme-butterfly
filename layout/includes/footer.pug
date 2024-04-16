@@ -3,15 +3,16 @@
     - var now = new Date()
     - var nowYear = now.getFullYear()
     if theme.footer.owner.since && theme.footer.owner.since != nowYear
-      .copyright!= `&copy;${theme.footer.owner.since} - ${nowYear} By ${config.author}`
+      .copyright!= `&copy;${theme.footer.owner.since} - ${nowYear} ${config.author}`
     else
-      .copyright!= `&copy;${nowYear} By ${config.author}`
+      .copyright!= `&copy;${nowYear} ${config.author}`
+  span#busuanzi_container_site_pv 本站总访问量
+    span#busuanzi_value_site_pv
+    | 次
   if theme.footer.copyright
     .framework-info
-      span= _p('footer.framework') + ' '
       a(href='https://hexo.io')= 'Hexo'
-      span.footer-separator |
-      span= _p('footer.theme') + ' '
+      span.footer-separator &
       a(href='https://github.com/jerryc127/hexo-theme-butterfly')= 'Butterfly'
   if theme.footer.custom_text
     .footer_custom_text!=`${theme.footer.custom_text}`
