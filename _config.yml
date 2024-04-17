@@ -789,11 +789,11 @@ wordcount:
 
 # medium-zoom
 # https://github.com/francoischalifour/medium-zoom
-medium_zoom: false
+medium_zoom: true
 
 # fancybox
 # https://fancyapps.com/fancybox/
-fancybox: true
+fancybox: false
 
 # Tag Plugins settings (標籤外掛)
 # --------------------------------------
@@ -874,7 +874,7 @@ pangu:
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
+  enable: true
   field: site # site/post
   placeholder:
   blur: false
@@ -913,7 +913,7 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    # - <script src="xxxx"></script>
+    - <script src="https://like.hqhome.net/c.min.js" defer></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -992,6 +992,3 @@ CDN:
     # valine:
     # waline_css:
     # waline_js:
-
-like:
-  js: https://like.hqhome.net/c.min.js
