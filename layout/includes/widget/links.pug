@@ -1,0 +1,9 @@
+if site.data.links
+  .card-widget.card-archives
+    .item-headline
+      i.fas.fa-link
+      span= '链接'
+    ul.card-archive-list
+      each item in site.data.links
+        li.card-archive-list-item
+          a.card-archive-list-link(href=item.url target="_blank")= item.name
